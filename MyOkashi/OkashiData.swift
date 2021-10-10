@@ -47,7 +47,7 @@ class OkashiData: ObservableObject {
         }
         
         // リクエストURLの組み立て
-        guard let req_url = URL(string: "https://sysbird.jp/toriko/api/?apikey=guest&format=json&keyword=\(keyword_encode)&max=10&order=r") else {
+        guard let req_url = URL(string: "https://sysbird.jp/toriko/api/?apikey=guest&format=json&keyword=\(keyword_encode)&max=20&order=r") else {
             return
         }
         print(req_url)
